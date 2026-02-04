@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="split-container">
+        <div class="image-box">
+          <img
+            src="images/3d-abstract-space-background-with-wireframe-landscape.jpg"
+            alt="Space"
+          />
+        </div>
+
+        <div class="form-box">
+          <div class="white-card">
+            <div class="logo">
+              <img
+                src="https://api.dicebear.com/7.x/shapes/svg?seed=unicorn"
+                alt="Logo"
+              />
+              
+            </div>
+
+            <h1>Create an account</h1>
+
+            <form id="signupForm">
+              <div class="field">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter your full name"
+                />
+                <span class="error" id="fullNameError"></span>
+              </div>
+
+              <div class="field">
+                <label>Email address</label>
+                <input type="email" id="email" placeholder="Email address" />
+                <span class="error" id="emailError"></span>
+              </div>
+
+              <div class="field">
+                <label>Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password"
+                />
+                <span class="error" id="passwordError"></span>
+              </div>
+
+              <div class="field">
+                <label>Confirm Password</label>
+                <div class="pass-wrapper">
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Repeat password"
+                  />
+                  <span class="material-symbols-outlined eye" id="togglePass"
+                    >visibility</span
+                  >
+                </div>
+                <span class="error" id="confirmPasswordError"></span>
+              </div>
+
+              <button type="submit" class="btn-main">Sign up</button>
+
+              <div class="or-divider">Or sign up with Google</div>
+
+              <button type="button" class="btn-google">
+                <img
+                  src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png"
+                  alt="G"
+                />
+                Sign up with Google
+              </button>
+            </form>
+
+            <p class="foot">Already have an account? <a href="#">Sign in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
